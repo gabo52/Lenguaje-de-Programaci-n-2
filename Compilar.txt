@@ -1,0 +1,3 @@
+javac *.java
+java -cp . Principal.java
+java -cp . Principal <-
