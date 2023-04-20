@@ -1,0 +1,10 @@
+javac com/avatar/rrhh/model/*.java
+jar cvf gsRRHHmodel.jar com/avatar/rrhh/model/*.class
+
+mueve el RRHHmodel
+
+javac -cp gsRRHHmodel.jar com/gamesoft/project/model/*.java
+jar cvf gsProjectmodel.jar com/gamesoft/project/model/*.class
+
+mueves el Project
+javac -cp gsRRHHmodel.jar;gsProjectmodel.jar; com/gamesoft/main/Principal.java
