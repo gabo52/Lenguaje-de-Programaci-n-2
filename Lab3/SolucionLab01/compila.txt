@@ -1,0 +1,18 @@
+Compilas logistica y creas su jar
+
+javac com/librarysoft/logistica/model/*.java
+jar cvf softLogisticaModel.jar com/librarysoft/logistica/model/*.class
+
+mueves la carpeta de logistica
+
+Compilamos personal
+
+javac -cp softLogisticaModel.jar com/librarysoft/personal/model/*.java
+jar cvf softPersonalModel.jar com/librarysoft/personal/model/*.class
+
+Package Personal creado
+
+javac -cp softLogisticaModel.jar;softPersonalModel.jar; com/librarysoft/main/Principal.java
+jar cvfm softPrincipal.jar MANIFEST.mf com/librarysoft/main/Principal.class
+java -jar softPrincipal.jar
+el cp solo se usa cuando se importan clases
