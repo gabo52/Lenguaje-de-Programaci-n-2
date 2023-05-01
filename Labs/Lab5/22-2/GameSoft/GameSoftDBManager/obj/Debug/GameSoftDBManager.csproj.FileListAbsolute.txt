@@ -1,0 +1,6 @@
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab5\22-2\GameSoft\GameSoftDBManager\bin\Debug\GameSoftDBManager.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab5\22-2\GameSoft\GameSoftDBManager\bin\Debug\GameSoftDBManager.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab5\22-2\GameSoft\GameSoftDBManager\obj\Debug\GameSoftDBManager.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab5\22-2\GameSoft\GameSoftDBManager\obj\Debug\GameSoftDBManager.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab5\22-2\GameSoft\GameSoftDBManager\obj\Debug\GameSoftDBManager.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab5\22-2\GameSoft\GameSoftDBManager\obj\Debug\GameSoftDBManager.pdb
