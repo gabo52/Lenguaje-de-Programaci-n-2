@@ -84,8 +84,10 @@
   <ItemGroup>
     <Compile Include="DAO\DesarrolladoraDAO.cs" />
     <Compile Include="DAO\GeneroDAO.cs" />
+    <Compile Include="DAO\VideojuegoDAO.cs" />
     <Compile Include="MySQL\DesarrolladoraMySQL.cs" />
     <Compile Include="MySQL\GeneroMySQL.cs" />
+    <Compile Include="MySQL\VideojuegoMySQL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -105,6 +105,7 @@
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(76, 24);
             this.btnBuscar.Text = "&Buscar";
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnCancelar
             // 
@@ -182,7 +183,7 @@
             // 
             this.cboGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboGenero.FormattingEnabled = true;
-            this.cboGenero.Location = new System.Drawing.Point(389, 175);
+            this.cboGenero.Location = new System.Drawing.Point(393, 175);
             this.cboGenero.Margin = new System.Windows.Forms.Padding(4);
             this.cboGenero.Name = "cboGenero";
             this.cboGenero.Size = new System.Drawing.Size(281, 25);
@@ -372,6 +373,7 @@
             this.txtDesarrolladora.ReadOnly = true;
             this.txtDesarrolladora.Size = new System.Drawing.Size(529, 23);
             this.txtDesarrolladora.TabIndex = 23;
+            this.txtDesarrolladora.TextChanged += new System.EventHandler(this.txtDesarrolladora_TextChanged);
             // 
             // lblDesarrolladora
             // 
@@ -407,6 +409,7 @@
             this.btnBuscarDesarrolladora.Size = new System.Drawing.Size(33, 28);
             this.btnBuscarDesarrolladora.TabIndex = 24;
             this.btnBuscarDesarrolladora.UseVisualStyleBackColor = true;
+            this.btnBuscarDesarrolladora.Click += new System.EventHandler(this.btnBuscarDesarrolladora_Click);
             // 
             // pbPortada
             // 

@@ -34,37 +34,41 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvVideojuegos = new System.Windows.Forms.DataGridView();
+            this.btnSeleccionar = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Plataforma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSeleccionar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVideojuegos)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(13, 13);
+            this.lblNombre.Location = new System.Drawing.Point(17, 16);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(167, 13);
+            this.lblNombre.Size = new System.Drawing.Size(213, 16);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Ingrese el nombre del Videojuego:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(186, 10);
+            this.txtNombre.Location = new System.Drawing.Point(248, 12);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(297, 20);
+            this.txtNombre.Size = new System.Drawing.Size(395, 22);
             this.txtNombre.TabIndex = 1;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(489, 8);
+            this.btnBuscar.Location = new System.Drawing.Point(652, 10);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(133, 28);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // dgvVideojuegos
             // 
@@ -91,52 +95,64 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvVideojuegos.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvVideojuegos.Location = new System.Drawing.Point(12, 39);
+            this.dgvVideojuegos.Location = new System.Drawing.Point(16, 48);
+            this.dgvVideojuegos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvVideojuegos.Name = "dgvVideojuegos";
             this.dgvVideojuegos.ReadOnly = true;
+            this.dgvVideojuegos.RowHeadersWidth = 51;
             this.dgvVideojuegos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVideojuegos.Size = new System.Drawing.Size(810, 173);
+            this.dgvVideojuegos.Size = new System.Drawing.Size(1080, 213);
             this.dgvVideojuegos.TabIndex = 3;
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.Location = new System.Drawing.Point(929, 10);
+            this.btnSeleccionar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.Size = new System.Drawing.Size(167, 28);
+            this.btnSeleccionar.TabIndex = 4;
+            this.btnSeleccionar.Text = "Seleccionar";
+            this.btnSeleccionar.UseVisualStyleBackColor = true;
+            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
             // 
             // ID
             // 
+            this.ID.DataPropertyName = "IdVideojuego";
             this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
+            this.ID.Width = 125;
             // 
             // Nombre
             // 
+            this.Nombre.DataPropertyName = "Nombre";
             this.Nombre.HeaderText = "Nombre del Videojuego";
+            this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             this.Nombre.Width = 380;
             // 
             // Plataforma
             // 
+            this.Plataforma.DataPropertyName = "Plataforma";
             this.Plataforma.HeaderText = "Plataforma";
+            this.Plataforma.MinimumWidth = 6;
             this.Plataforma.Name = "Plataforma";
             this.Plataforma.ReadOnly = true;
             this.Plataforma.Width = 250;
             // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.Location = new System.Drawing.Point(697, 8);
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.Size = new System.Drawing.Size(125, 23);
-            this.btnSeleccionar.TabIndex = 4;
-            this.btnSeleccionar.Text = "Seleccionar";
-            this.btnSeleccionar.UseVisualStyleBackColor = true;
-            // 
             // frmBusquedaVideojuegos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 221);
+            this.ClientSize = new System.Drawing.Size(1112, 272);
             this.Controls.Add(this.btnSeleccionar);
             this.Controls.Add(this.dgvVideojuegos);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBusquedaVideojuegos";
             this.Text = "Formulario de Búsqueda de Videojuegos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvVideojuegos)).EndInit();
