@@ -1,0 +1,6 @@
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftModel\bin\Debug\ProjectSoftModel.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftModel\bin\Debug\ProjectSoftModel.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftModel\obj\Debug\ProjectSoftModel.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftModel\obj\Debug\ProjectSoftModel.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftModel\obj\Debug\ProjectSoftModel.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftModel\obj\Debug\ProjectSoftModel.pdb

@@ -1,0 +1,6 @@
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftDBManager\bin\Debug\EduSoftDBManager.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftDBManager\bin\Debug\EduSoftDBManager.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftDBManager\obj\Debug\EduSoftDBManager.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftDBManager\obj\Debug\EduSoftDBManager.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftDBManager\obj\Debug\EduSoftDBManager.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftDBManager\obj\Debug\EduSoftDBManager.pdb

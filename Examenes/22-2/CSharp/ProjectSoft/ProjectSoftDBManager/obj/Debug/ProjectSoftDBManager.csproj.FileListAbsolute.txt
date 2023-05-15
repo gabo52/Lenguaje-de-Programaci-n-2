@@ -1,0 +1,6 @@
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftDBManager\bin\Debug\ProjectSoftDBManager.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftDBManager\bin\Debug\ProjectSoftDBManager.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftDBManager\obj\Debug\ProjectSoftDBManager.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftDBManager\obj\Debug\ProjectSoftDBManager.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftDBManager\obj\Debug\ProjectSoftDBManager.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-2\CSharp\ProjectSoft\ProjectSoftDBManager\obj\Debug\ProjectSoftDBManager.pdb

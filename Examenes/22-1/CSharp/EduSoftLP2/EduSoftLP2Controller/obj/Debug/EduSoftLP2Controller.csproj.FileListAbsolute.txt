@@ -1,0 +1,16 @@
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\EduSoftLP2Controller.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\EduSoftLP2Controller.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\EduSoftDBManager.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\EduSoftLP2Model.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\MySql.Data.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\System.Memory.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\System.Buffers.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\EduSoftDBManager.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\bin\Debug\EduSoftLP2Model.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\obj\Debug\EduSoftLP2Controller.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\obj\Debug\EduSoftLP2Controller.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\obj\Debug\EduSoftLP2Controller.csproj.CopyComplete
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\obj\Debug\EduSoftLP2Controller.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\22-1\CSharp\EduSoftLP2\EduSoftLP2Controller\obj\Debug\EduSoftLP2Controller.pdb
