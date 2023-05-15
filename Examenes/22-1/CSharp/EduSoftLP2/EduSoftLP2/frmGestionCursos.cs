@@ -405,8 +405,10 @@ namespace EduSoftLP2
                 }
 
                 txtSumilla.Text = curso.Sumilla;
+
                 MemoryStream ms = new MemoryStream(curso.Foto);
                 pbFoto.Image = new Bitmap(ms);
+
                 cboEspecialidades.SelectedValue = curso.Especialidad.IdEspecialidad;
                 dgvDocentes.DataSource = daoDocente.listarPorIdCurso(curso.IdCurso);
                 _estado = Estado.Buscar;

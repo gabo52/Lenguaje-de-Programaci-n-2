@@ -116,10 +116,10 @@ Código para agregar clase en el BindingList<>:
         return;
     }
     curso.Docentes.Add(docente);
-    txtCodigoDocente.Text = " ";
-    txtNombreDocente.Text = " ";
+    txtCodigoDocente.Text = "";
+    txtNombreDocente.Text = "";
 
-    
+
 Código para eliminar clase del BindingList<>:
 
     private void btnEliminarProducto_Click(object sender, EventArgs e)
@@ -138,7 +138,22 @@ Código para eliminar clase del BindingList<>:
         }
     }
 
-				
+Para guardar la clase principal, debemos crear una función insertar para la tabla principal y otro insertar para las asociaciones de las líneas del BindingList, el primero se ejecuta normal en el MySQL y el segundo se realiza con un foreach.
+
+Para leer la clase principal solo obtenemos los datos generales de la clase y luego devolvemos el bindin list de las líneas respectivas con una función del DAO.
+
+Código para asignar valores a las columnas del dgv con el cellFormating:
+
+    try {
+    LineaOrdenVenta lov = (LineaOrdenVenta) dgvDetalleOrdenVenta.Rows[e.RowIndex].DataBoundItem;
+    dgvDetalleOrdenVenta.Rows[e.RowIndex].Cells[0].Value = lov.Producto.Nombre + " " +lov.Producto.UnidadMedida;
+    dgvDetalleOrdenVenta.Rows[e.RowIndex].Cells[1].Value = lov.Cantidad;
+    dgvDetalleOrdenVenta.Rows[e.RowIndex].Cells[2].Value = lov.Producto.Precio;
+    dgvDetalleOrdenVenta.Rows[e.RowIndex].Cells[3].Value = lov.Subtotal;
+    }catch(Exception ex){
+
+    }
+
 Anexo:
 
 Para nombrar los objetos:
@@ -150,10 +165,10 @@ Para nombrar los objetos:
 Para convertir de string a enum:
 (Categoria)Enum.Parse(typeof(Categoria), lector.GetString("categoria"));
 
-
+Código para reducir una cadena:
+string year = curso.Semestre.Substring(0,curso.Semestre.Length-2);
 
 No olvidar limpiar los componentes(para el inicio del programa, para nuevo y para cancelar) y cambiar los estados.
 
-
-preguntar el si es DBNULL y si es necesario bloquear las cadenas no válidas
-cell formating
+Texto prueba:
+Programación bajo sistemas operativos de ambiente gráfico, orientados a objeto, con interfaces gráficas de usuario, concurrentes y distribuidos.

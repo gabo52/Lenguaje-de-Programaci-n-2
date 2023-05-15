@@ -46,6 +46,7 @@ namespace EduSoftLP2Controller.MySQL
                         docente.ApellidoPaterno = lector.GetString("apellido_paterno");
                         docente.NumeroDocumento = lector.GetString("numero_documento");
                         docente.MaximoGradoAlcanzado = lector.GetString("maximo_grado_alcanzado");
+                        docente.TipoDocumento = (TipoDocumento)Enum.Parse(typeof(TipoDocumento), lector.GetString("tipo_documento"));
                         docente.GradoRevalidadoSUNEDU = lector.GetBoolean("grado_revalidado_SUNEDU");
                         docente.Filiacion = new Filiacion();
                         docente.Filiacion.IdFiliacion = lector.GetInt32("id_filiacion");
@@ -109,6 +110,7 @@ namespace EduSoftLP2Controller.MySQL
                         docente.NumeroDocumento = lector.GetString("numero_documento");
                         docente.MaximoGradoAlcanzado = lector.GetString("maximo_grado_alcanzado");
                         docente.GradoRevalidadoSUNEDU = lector.GetBoolean("grado_revalidado_SUNEDU");
+                        docente.TipoDocumento = (TipoDocumento)Enum.Parse(typeof(TipoDocumento), lector.GetString("tipo_documento"));
                         docente.Filiacion = new Filiacion();
                         docente.Filiacion.IdFiliacion = lector.GetInt32("id_filiacion");
                         docente.Filiacion.Nombre = lector.GetString("nombre_filiacion");
