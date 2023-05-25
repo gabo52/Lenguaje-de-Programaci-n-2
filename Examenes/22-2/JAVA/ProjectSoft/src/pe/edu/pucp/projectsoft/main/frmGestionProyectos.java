@@ -574,7 +574,7 @@ public class frmGestionProyectos extends javax.swing.JPanel {
         formModal.add(panelBusqDoc);
         formModal.pack();
         formModal.setResizable(false);
-        formModal.setTitle("Formulario de Búsqueda de Empleados");
+        formModal.setTitle("Formulario de Búsqueda de Docentes");
         formModal.setModal(true);
         formModal.setVisible(true);
         if(panelBusqDoc.getDocenteSeleccionado()!=null){
@@ -602,12 +602,9 @@ public class frmGestionProyectos extends javax.swing.JPanel {
                 System.out.println(ex.getMessage());
             }
         }
-
-        
     }//GEN-LAST:event_btnDescargarArchivoActionPerformed
 
-    public void establecerEstadoComponentes()
-    {
+    public void establecerEstadoComponentes(){
         switch (estado) {
             case Inicial:
                 btnNuevo.setEnabled(true);

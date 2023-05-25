@@ -103,3 +103,23 @@ if(resultado == JFileChooser.APPROVE_OPTION){
 }
 
 ```
+
+Para poner el valor respectivo del cbo:
+
+``` java
+proyecto.setArea((Area)cboArea.getSelectedItem());
+```
+
+Para el Calendar:
+
+Ponemos el jar en la carpeta lib del proyecto principal.
+Añadimos el JAR/FOLDER
+
+
+
+Datos conexión:
+user: admin
+password:inf282lp220231
+nombre de la BD: lp2lab05
+hostname: lab05-lengpro2-2023-1.cijqnwrnhufq.us-east-1.rds.amazonaws.com
+Identificador del clúster de base de datos: lab05-lengpro2-2023-1
