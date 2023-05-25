@@ -1,28 +1,71 @@
 package pe.edu.pucp.projectsoft.main;
 
+import java.awt.Component;
 import java.awt.Font;
 import java.awt.Image;
-import java.io.File;
 import java.net.URL;
+import java.nio.file.Files;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.Calendar;
+import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.DefaultListCellRenderer;
 import javax.swing.ImageIcon;
+import javax.swing.JDialog;
 import javax.swing.JFileChooser;
+import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import pe.edu.pucp.projectsoft.DAO.AreaDAO;
+import pe.edu.pucp.projectsoft.DAO.EstudianteDAO;
+import pe.edu.pucp.projectsoft.DAO.ProyectoDAO;
+import pe.edu.pucp.projectsoft.MySQL.AreaMySQL;
+import pe.edu.pucp.projectsoft.MySQL.EstudianteMySQL;
+import pe.edu.pucp.projectsoft.MySQL.ProyectoMySQL;
+import pe.edu.pucp.projectsoft.model.Area;
+import pe.edu.pucp.projectsoft.model.Docente;
+import pe.edu.pucp.projectsoft.model.Estudiante;
+import pe.edu.pucp.projectsoft.model.Proyecto;
 
 public class frmGestionProyectos extends javax.swing.JPanel {
-    
+    private Proyecto proyecto;
+    private ProyectoDAO daoProyecto;
     private File archivoPDF;
     private File archivoFoto;
     private Estado estado;
+    private Estudiante estudiante;
+    private EstudianteDAO daoEstudiante;
+    private Docente docente;
+    private DefaultComboBoxModel modeloAreas;
+    private AreaDAO daoArea;
     
     public frmGestionProyectos() {
         initComponents();
         dgvJurados.getTableHeader().setFont(new Font("Microsoft Sans Serif", 1, 11));
         colocarIconos();
+        
+        cboArea.setRenderer( new DefaultListCellRenderer(){
+            @Override
+            public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus){
+            super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+            if(value instanceof Area){
+                setText(((Area)value).getNombre());
+            }
+            return this;
+            }
+        });
+        
+
+
         estado = Estado.Inicial;
         establecerEstadoComponentes();
+        
+        daoArea = new AreaMySQL();
+        daoProyecto = new ProyectoMySQL();
+        modeloAreas = new DefaultComboBoxModel(daoArea.listarTodas().toArray());
+        cboArea.setModel(modeloAreas);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -143,6 +186,11 @@ public class frmGestionProyectos extends javax.swing.JPanel {
 
         btnBuscarEstudiante.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnBuscarEstudiante.setText("...");
+        btnBuscarEstudiante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarEstudianteActionPerformed(evt);
+            }
+        });
 
         lblTitulo.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         lblTitulo.setText("Título:");
@@ -162,6 +210,11 @@ public class frmGestionProyectos extends javax.swing.JPanel {
         lblArea.setText("Área Temática:");
 
         cboArea.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
+        cboArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboAreaActionPerformed(evt);
+            }
+        });
 
         lblArchivoTemaTesis.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         lblArchivoTemaTesis.setText("Archivo PDF del Tema de Tesis:");
@@ -179,6 +232,11 @@ public class frmGestionProyectos extends javax.swing.JPanel {
 
         btnDescargarArchivo.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnDescargarArchivo.setText("Descargar");
+        btnDescargarArchivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDescargarArchivoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout tpDatosGeneralesLayout = new javax.swing.GroupLayout(tpDatosGenerales);
         tpDatosGenerales.setLayout(tpDatosGeneralesLayout);
@@ -299,6 +357,11 @@ public class frmGestionProyectos extends javax.swing.JPanel {
 
         btnBuscarDocente.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnBuscarDocente.setText("...");
+        btnBuscarDocente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarDocenteActionPerformed(evt);
+            }
+        });
 
         btnAgregarJurado.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnAgregarJurado.setText("+");
@@ -393,8 +456,16 @@ public class frmGestionProyectos extends javax.swing.JPanel {
     }
     
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        
-        
+        proyecto.setArea((Area)cboArea.getSelectedItem());
+        proyecto.setDescripcion(txtDescripcion.getText());
+        proyecto.setTitulo(txtTitulo.getText());
+        int resultado = daoProyecto.insertar(proyecto);
+        if(resultado != 0){
+            JOptionPane.showMessageDialog(this, "Se ha registrado con éxito","Mensaje de confirmación", JOptionPane.INFORMATION_MESSAGE);
+            estado = Estado.Inicial;
+            establecerEstadoComponentes();
+        }else
+            JOptionPane.showMessageDialog(this, "Ha ocurrido un error con el registro","Mensaje de error", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnSubirArchivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubirArchivoActionPerformed
@@ -408,6 +479,7 @@ public class frmGestionProyectos extends javax.swing.JPanel {
             //Convertimos el archivo a byte[] y lo asignamos al objeto Articulo
             try{
                 txtRutaArchivo.setText(this.archivoPDF.getPath());
+                proyecto.setArchivoTemaTesis(Files.readAllBytes(this.archivoPDF.toPath()));
             }catch(Exception ex){
                 JOptionPane.showMessageDialog(null, "El archivo seleccionado no existe","Mensaje de Error",JOptionPane.ERROR_MESSAGE);
                 System.out.println("Error al momento de convertir el archivo a byte[]");
@@ -425,7 +497,7 @@ public class frmGestionProyectos extends javax.swing.JPanel {
                 Image img = new ImageIcon(archivoFoto.toString()).getImage();
                 Image newImg = img.getScaledInstance(pbFoto.getWidth(), pbFoto.getHeight(), java.awt.Image.SCALE_SMOOTH);
                 pbFoto.setIcon(new ImageIcon(newImg));
-                
+                proyecto.setFoto(Files.readAllBytes(archivoFoto.toPath()));
             }catch(Exception ex){
                 System.out.println(ex.getMessage());
             }
@@ -434,6 +506,7 @@ public class frmGestionProyectos extends javax.swing.JPanel {
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
         estado = Estado.Nuevo;
+        proyecto = new Proyecto();
         limpiarComponentes();
         establecerEstadoComponentes();
     }//GEN-LAST:event_btnNuevoActionPerformed
@@ -445,8 +518,93 @@ public class frmGestionProyectos extends javax.swing.JPanel {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
-        
+        JDialog formModal = new JDialog();
+        frmBusquedaProyectos panelBusqProyect = new frmBusquedaProyectos(formModal);
+        formModal.add(panelBusqProyect);
+        formModal.pack();
+        formModal.setResizable(false);
+        formModal.setTitle("Formulario de Búsqueda de Proyectos");
+        formModal.setModal(true);
+        formModal.setVisible(true);
+        if(panelBusqProyect.getProyectoSeleccionado()!=null){
+            proyecto = panelBusqProyect.getProyectoSeleccionado();
+            txtDescripcion.setText(proyecto.getDescripcion());
+            txtEstudiante.setText(proyecto.getEstudiante().getNombre() + " " + proyecto.getEstudiante().getApellidoPaterno());
+            txtTitulo.setText(proyecto.getTitulo());
+            
+            Image img = new ImageIcon(proyecto.getFoto()).getImage();
+            Image newImg = img.getScaledInstance(pbFoto.getWidth(), pbFoto.getHeight(), 
+            java.awt.Image.SCALE_SMOOTH);
+            pbFoto.setIcon(new ImageIcon(newImg));
+            
+            cboArea.getModel().setSelectedItem(proyecto.getArea());
+            
+
+            estado = Estado.Buscar;
+            establecerEstadoComponentes();
+        }
     }//GEN-LAST:event_btnBuscarActionPerformed
+
+    private void btnBuscarEstudianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarEstudianteActionPerformed
+        // TODO add your handling code here:
+        JDialog formModal = new JDialog();
+        frmBusquedaEstudiantes panelBusqEst = new frmBusquedaEstudiantes(formModal);
+        formModal.add(panelBusqEst);
+        formModal.pack();
+        formModal.setResizable(false);
+        formModal.setTitle("Formulario de Búsqueda de Estudiantes");
+        formModal.setModal(true);
+        formModal.setVisible(true);
+        if(panelBusqEst.getEstudianteSeleccionado()!=null){
+            estudiante = panelBusqEst.getEstudianteSeleccionado();
+            txtEstudiante.setText(estudiante.getNombre()+" "+estudiante.getApellidoPaterno());
+            proyecto.setEstudiante(estudiante);
+            //estado = Estado.Buscar;
+            //establecerEstadoComponentes();
+        }
+    }//GEN-LAST:event_btnBuscarEstudianteActionPerformed
+
+    private void cboAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboAreaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboAreaActionPerformed
+
+    private void btnBuscarDocenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarDocenteActionPerformed
+        JDialog formModal = new JDialog();
+        frmBusquedaDocente panelBusqDoc = new frmBusquedaDocente(formModal);
+        formModal.add(panelBusqDoc);
+        formModal.pack();
+        formModal.setResizable(false);
+        formModal.setTitle("Formulario de Búsqueda de Empleados");
+        formModal.setModal(true);
+        formModal.setVisible(true);
+        if(panelBusqDoc.getDocenteSeleccionado()!=null){
+            docente = panelBusqDoc.getDocenteSeleccionado();
+            txtCodigoPUCPDocente.setText(docente.getCodigoPUCP());
+            txtNombreCompletoDocente.setText(docente.getNombre() + " " + docente.getApellidoPaterno());
+            //txtEstudiante.setText(estudiante.getNombre()+" "+estudiante.getApellidoPaterno());
+            //estado = Estado.Buscar;
+            //establecerEstadoComponentes();
+        }
+    }//GEN-LAST:event_btnBuscarDocenteActionPerformed
+
+    private void btnDescargarArchivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDescargarArchivoActionPerformed
+        FileNameExtensionFilter filtro = new FileNameExtensionFilter("JPG","PNG","jpg","png");
+        ofdArchivo.setFileFilter(filtro);
+        int resultado = ofdArchivo.showSaveDialog(null);
+        if(resultado == JFileChooser.APPROVE_OPTION){
+            try{
+                File archivoSeleccionado = ofdArchivo.getSelectedFile();
+                FileOutputStream fos = new FileOutputStream(archivoSeleccionado);
+                fos.write(this.proyecto.getArchivoTemaTesis());
+                fos.flush();
+                fos.close();
+            }catch(Exception ex){
+                System.out.println(ex.getMessage());
+            }
+        }
+
+        
+    }//GEN-LAST:event_btnDescargarArchivoActionPerformed
 
     public void establecerEstadoComponentes()
     {

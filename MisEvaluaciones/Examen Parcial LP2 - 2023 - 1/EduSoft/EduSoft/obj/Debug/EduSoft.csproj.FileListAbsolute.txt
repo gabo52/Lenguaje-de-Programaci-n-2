@@ -1,0 +1,58 @@
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.AssemblyReference.cache
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.SuggestedBindingRedirects.cache
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.frmBusquedaEjecutivos.resources
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.frmBusquedaProgramasAcademicos.resources
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.frmBusquedaSedes.resources
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.frmGestionarSedes.resources
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.Properties.Resources.resources
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.GenerateResource.cache
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.CoreCompileInputs.cache
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoft.exe.config
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoft.exe
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoft.pdb
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftController.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftModel.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\MySql.Data.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftDBManager.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\Google.Protobuf.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\BouncyCastle.Crypto.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\System.Memory.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\System.Numerics.Vectors.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\System.Buffers.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftController.pdb
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftModel.pdb
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftDBManager.pdb
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.exe.config
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.CopyComplete
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.exe
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoft.exe.config
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoft.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoft.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftController.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftModel.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\MySql.Data.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftDBManager.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\Google.Protobuf.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\System.Memory.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\System.Buffers.dll
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftController.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftModel.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\bin\Debug\EduSoftDBManager.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.SuggestedBindingRedirects.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.exe.config
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.frmBusquedaEjecutivos.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.frmBusquedaProgramasAcademicos.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.frmBusquedaSedes.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.frmGestionarSedes.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.Properties.Resources.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.GenerateResource.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.csproj.CopyComplete
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\MisEvaluaciones\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoft\obj\Debug\EduSoft.pdb

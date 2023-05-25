@@ -1,11 +1,52 @@
 package pe.edu.pucp.projectsoft.main;
 
 import java.awt.Font;
+import java.util.ArrayList;
+import javax.swing.JDialog;
+import javax.swing.table.DefaultTableModel;
+import pe.edu.pucp.projectsoft.DAO.DocenteDAO;
+import pe.edu.pucp.projectsoft.MySQL.DocenteMySQL;
+import pe.edu.pucp.projectsoft.MySQL.EstudianteMySQL;
+import pe.edu.pucp.projectsoft.model.Docente;
 
 public class frmBusquedaDocente extends javax.swing.JPanel {
+    DocenteDAO daoDocente;
+    JDialog dialogo;
+    private DefaultTableModel modeloDocentes;
+    private ArrayList<Docente> docentes;
+    private Docente docenteSeleccionado;
+    
+    public Docente getDocenteSeleccionado() {
+        return docenteSeleccionado;
+    }
+
+    public void setDocenteSeleccionado(Docente docenteSeleccionado) {
+        this.docenteSeleccionado = docenteSeleccionado;
+    }
+    
+
     public frmBusquedaDocente() {
         initComponents();
         dgvDocentes.getTableHeader().setFont(new Font("Microsoft Sans Serif", 1, 11));
+    }
+    
+    public void completarTabla(){
+        modeloDocentes.setRowCount(0);
+        Object[] fila = new Object[3];
+        for(Docente doc : docentes){
+            fila[0] =   doc.getCodigoPUCP();
+            fila[1] = doc.getNombre() + " " + doc.getApellidoPaterno();
+            fila[2] = doc.getCategoria();
+            modeloDocentes.addRow(fila);
+        }
+    }
+    
+    public frmBusquedaDocente(JDialog dialogo) {
+        initComponents();
+        daoDocente = new DocenteMySQL();
+        modeloDocentes = (DefaultTableModel) dgvDocentes.getModel();
+        dgvDocentes.getTableHeader().setFont(new Font("Microsoft Sans Serif", 1, 11));
+        this.dialogo = dialogo;
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -30,9 +71,19 @@ public class frmBusquedaDocente extends javax.swing.JPanel {
 
         btnBuscar.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnBuscar.setText("Buscar");
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarActionPerformed(evt);
+            }
+        });
 
         btnSeleccionar.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnSeleccionar.setText("Seleccionar");
+        btnSeleccionar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSeleccionarActionPerformed(evt);
+            }
+        });
 
         dgvDocentes.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         dgvDocentes.setModel(new javax.swing.table.DefaultTableModel(
@@ -95,6 +146,19 @@ public class frmBusquedaDocente extends javax.swing.JPanel {
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
+        docentes = daoDocente.listarPorCodigoPUCPNombre(txtCodigoNombre.getText());
+        completarTabla();
+    }//GEN-LAST:event_btnBuscarActionPerformed
+
+    private void btnSeleccionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionarActionPerformed
+        if(dgvDocentes.getSelectedRow() != -1){
+            docenteSeleccionado = docentes.get(dgvDocentes.getSelectedRow());
+            dialogo.setVisible(false);
+        }
+
+    }//GEN-LAST:event_btnSeleccionarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

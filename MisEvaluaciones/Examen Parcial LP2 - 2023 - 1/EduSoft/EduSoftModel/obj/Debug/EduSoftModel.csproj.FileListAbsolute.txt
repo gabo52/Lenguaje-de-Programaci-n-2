@@ -1,0 +1,6 @@
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoftModel\bin\Debug\EduSoftModel.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoftModel\bin\Debug\EduSoftModel.pdb
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoftModel\obj\Debug\EduSoftModel.csproj.AssemblyReference.cache
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoftModel\obj\Debug\EduSoftModel.csproj.CoreCompileInputs.cache
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoftModel\obj\Debug\EduSoftModel.dll
+D:\Users\alulab14\Desktop\Examen Parcial LP2 - 2023 - 1\EduSoft\EduSoftModel\obj\Debug\EduSoftModel.pdb

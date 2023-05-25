@@ -1,11 +1,40 @@
 package pe.edu.pucp.projectsoft.main;
 
 import java.awt.Font;
+import java.util.ArrayList;
+import javax.swing.JDialog;
+import javax.swing.table.DefaultTableModel;
+import pe.edu.pucp.projectsoft.DAO.ProyectoDAO;
+import pe.edu.pucp.projectsoft.MySQL.ProyectoMySQL;
+import pe.edu.pucp.projectsoft.model.Proyecto;
 
 public class frmBusquedaProyectos extends javax.swing.JPanel {
+    private JDialog dialogo;
+    private ProyectoDAO daoProyecto;
+    private ArrayList<Proyecto> proyectos;
+    private DefaultTableModel modeloProyectos;
+    private Proyecto proyectoSeleccionado;
+
+    public Proyecto getProyectoSeleccionado() {
+        return proyectoSeleccionado;
+    }
+
+    public void setProyectoSeleccionado(Proyecto proyectoSeleccionado) {
+        this.proyectoSeleccionado = proyectoSeleccionado;
+    }
+
     public frmBusquedaProyectos() {
         initComponents();
         dgvProyectos.getTableHeader().setFont(new Font("Microsoft Sans Serif", 1, 11));
+    }
+    
+    
+    public frmBusquedaProyectos(JDialog dialogo) {
+        initComponents();
+        dgvProyectos.getTableHeader().setFont(new Font("Microsoft Sans Serif", 1, 11));
+        daoProyecto = new ProyectoMySQL();
+        modeloProyectos = (DefaultTableModel) dgvProyectos.getModel();
+        this.dialogo = dialogo;
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -30,9 +59,19 @@ public class frmBusquedaProyectos extends javax.swing.JPanel {
 
         btnBuscar.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnBuscar.setText("Buscar");
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarActionPerformed(evt);
+            }
+        });
 
         btnSeleccionar.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnSeleccionar.setText("Seleccionar");
+        btnSeleccionar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSeleccionarActionPerformed(evt);
+            }
+        });
 
         dgvProyectos.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         dgvProyectos.setModel(new javax.swing.table.DefaultTableModel(
@@ -93,6 +132,27 @@ public class frmBusquedaProyectos extends javax.swing.JPanel {
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void completarTabla(){
+        modeloProyectos.setRowCount(0);
+        Object[] fila = new Object[3];
+        for(Proyecto proy : proyectos){
+            fila[0] = proy.getTitulo();
+            fila[1] = proy.getEstudiante().getNombre() + " "+ proy.getEstudiante().getApellidoPaterno();
+            modeloProyectos.addRow(fila);
+        }
+    }
+    private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
+        proyectos = daoProyecto.listarPorTituloCodigoPUCPNombre(txtTituloCodigoNombre.getText());
+        completarTabla();
+    }//GEN-LAST:event_btnBuscarActionPerformed
+
+    private void btnSeleccionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionarActionPerformed
+        if(dgvProyectos.getSelectedRow() != -1){
+            proyectoSeleccionado = proyectos.get(dgvProyectos.getSelectedRow());
+            dialogo.setVisible(false);
+        }
+    }//GEN-LAST:event_btnSeleccionarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

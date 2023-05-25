@@ -1,11 +1,40 @@
 package pe.edu.pucp.projectsoft.main;
 
 import java.awt.Font;
+import java.util.ArrayList;
+import javax.swing.JDialog;
+import javax.swing.table.DefaultTableModel;
+import pe.edu.pucp.projectsoft.DAO.EstudianteDAO;
+import pe.edu.pucp.projectsoft.MySQL.EstudianteMySQL;
+import pe.edu.pucp.projectsoft.model.Estudiante;
 
 public class frmBusquedaEstudiantes extends javax.swing.JPanel {
+    private JDialog dialogo;
+    private ArrayList<Estudiante> estudiantes;
+    private DefaultTableModel modeloEstudiantes;
+    private Estudiante estudianteSeleccionado;
+    private EstudianteDAO daoEstudiante;
+    
+    public Estudiante getEstudianteSeleccionado() {
+        return estudianteSeleccionado;
+    }
+
+    public void setEstudianteSeleccionado(Estudiante estudianteSeleccionado) {
+        this.estudianteSeleccionado = estudianteSeleccionado;
+    }
+    
     public frmBusquedaEstudiantes() {
         initComponents();
+        daoEstudiante = new EstudianteMySQL();
         dgvEstudiantes.getTableHeader().setFont(new Font("Microsoft Sans Serif", 1, 11));
+        modeloEstudiantes = (DefaultTableModel)dgvEstudiantes.getModel();
+    }
+    
+    public frmBusquedaEstudiantes(JDialog dialogo) {
+        initComponents();
+        daoEstudiante = new EstudianteMySQL();
+        modeloEstudiantes = (DefaultTableModel) dgvEstudiantes.getModel();
+        this.dialogo = dialogo;
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -30,9 +59,19 @@ public class frmBusquedaEstudiantes extends javax.swing.JPanel {
 
         btnBuscar.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnBuscar.setText("Buscar");
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarActionPerformed(evt);
+            }
+        });
 
         btnSeleccionar.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         btnSeleccionar.setText("Seleccionar");
+        btnSeleccionar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSeleccionarActionPerformed(evt);
+            }
+        });
 
         dgvEstudiantes.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         dgvEstudiantes.setModel(new javax.swing.table.DefaultTableModel(
@@ -95,6 +134,28 @@ public class frmBusquedaEstudiantes extends javax.swing.JPanel {
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void completarTabla(){
+        modeloEstudiantes.setRowCount(0);
+        Object[] fila = new Object[3];
+        for(Estudiante est : estudiantes){
+            fila[0] = est.getCodigoPUCP();
+            fila[1] = est.getNombre() + " " + est.getApellidoPaterno();
+            fila[2] = est.getCRAEST();
+            modeloEstudiantes.addRow(fila);
+        }
+    }
+    private void btnSeleccionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionarActionPerformed
+        if(dgvEstudiantes.getSelectedRow() != -1){
+            estudianteSeleccionado = estudiantes.get(dgvEstudiantes.getSelectedRow());
+            dialogo.setVisible(false);
+        }
+    }//GEN-LAST:event_btnSeleccionarActionPerformed
+
+    private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
+        estudiantes = daoEstudiante.listarTodos(txtCodigoNombre.getText());
+        completarTabla();
+    }//GEN-LAST:event_btnBuscarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
