@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.rinconlibrosoft.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ServiciosWS" targetNamespace="http://services.rinconlibrosoft.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/RinconLibroSoftServices/ServiciosWS?xsd=1" namespace="http://services.rinconlibrosoft.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarEditorialPorNombre">
+    <part name="parameters" element="tns:listarEditorialPorNombre" />
+  </message>
+  <message name="listarEditorialPorNombreResponse">
+    <part name="parameters" element="tns:listarEditorialPorNombreResponse" />
+  </message>
+  <message name="listarLibrosPorTituloOEditorial">
+    <part name="parameters" element="tns:listarLibrosPorTituloOEditorial" />
+  </message>
+  <message name="listarLibrosPorTituloOEditorialResponse">
+    <part name="parameters" element="tns:listarLibrosPorTituloOEditorialResponse" />
+  </message>
+  <message name="listarAutoresPorIdLibro">
+    <part name="parameters" element="tns:listarAutoresPorIdLibro" />
+  </message>
+  <message name="listarAutoresPorIdLibroResponse">
+    <part name="parameters" element="tns:listarAutoresPorIdLibroResponse" />
+  </message>
+  <message name="listarAutoresPorNombre">
+    <part name="parameters" element="tns:listarAutoresPorNombre" />
+  </message>
+  <message name="listarAutoresPorNombreResponse">
+    <part name="parameters" element="tns:listarAutoresPorNombreResponse" />
+  </message>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="insertarLibro">
+    <part name="parameters" element="tns:insertarLibro" />
+  </message>
+  <message name="insertarLibroResponse">
+    <part name="parameters" element="tns:insertarLibroResponse" />
+  </message>
+  <portType name="ServiciosWS">
+    <operation name="listarEditorialPorNombre">
+      <input wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/listarEditorialPorNombreRequest" message="tns:listarEditorialPorNombre" />
+      <output wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/listarEditorialPorNombreResponse" message="tns:listarEditorialPorNombreResponse" />
+    </operation>
+    <operation name="listarLibrosPorTituloOEditorial">
+      <input wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/listarLibrosPorTituloOEditorialRequest" message="tns:listarLibrosPorTituloOEditorial" />
+      <output wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/listarLibrosPorTituloOEditorialResponse" message="tns:listarLibrosPorTituloOEditorialResponse" />
+    </operation>
+    <operation name="listarAutoresPorIdLibro">
+      <input wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/listarAutoresPorIdLibroRequest" message="tns:listarAutoresPorIdLibro" />
+      <output wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/listarAutoresPorIdLibroResponse" message="tns:listarAutoresPorIdLibroResponse" />
+    </operation>
+    <operation name="listarAutoresPorNombre">
+      <input wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/listarAutoresPorNombreRequest" message="tns:listarAutoresPorNombre" />
+      <output wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/listarAutoresPorNombreResponse" message="tns:listarAutoresPorNombreResponse" />
+    </operation>
+    <operation name="hello">
+      <input wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="insertarLibro">
+      <input wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/insertarLibroRequest" message="tns:insertarLibro" />
+      <output wsam:Action="http://services.rinconlibrosoft.pucp.edu.pe/ServiciosWS/insertarLibroResponse" message="tns:insertarLibroResponse" />
+    </operation>
+  </portType>
+  <binding name="ServiciosWSPortBinding" type="tns:ServiciosWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarEditorialPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarLibrosPorTituloOEditorial">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAutoresPorIdLibro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAutoresPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarLibro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ServiciosWS">
+    <port name="ServiciosWSPort" binding="tns:ServiciosWSPortBinding">
+      <soap:address location="http://localhost:8080/RinconLibroSoftServices/ServiciosWS" />
+    </port>
+  </service>
+</definitions>

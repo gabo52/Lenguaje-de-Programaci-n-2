@@ -1,0 +1,14 @@
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\bin\Debug\RinconLibroSoft.exe.config
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\bin\Debug\RinconLibroSoft.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\bin\Debug\RinconLibroSoft.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.csproj.SuggestedBindingRedirects.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.frmBusquedaAutores.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.frmBusquedaEditoriales.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.frmBusquedaLibros.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.frmGestionarLibros.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.Properties.Resources.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.csproj.GenerateResource.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Labs\Lab12\22-1\FrontEnd_CSharp\RinconLibroSoft\RinconLibroSoft\obj\Debug\RinconLibroSoft.pdb
