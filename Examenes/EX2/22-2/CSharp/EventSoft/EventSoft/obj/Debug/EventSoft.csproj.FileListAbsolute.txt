@@ -1,0 +1,13 @@
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\bin\Debug\EventSoft.exe.config
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\bin\Debug\EventSoft.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\bin\Debug\EventSoft.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.csproj.SuggestedBindingRedirects.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.frmBusquedaDocentes.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.frmBusquedaEventos.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.frmGestionEventos.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.Properties.Resources.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.csproj.GenerateResource.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-2\CSharp\EventSoft\EventSoft\obj\Debug\EventSoft.pdb

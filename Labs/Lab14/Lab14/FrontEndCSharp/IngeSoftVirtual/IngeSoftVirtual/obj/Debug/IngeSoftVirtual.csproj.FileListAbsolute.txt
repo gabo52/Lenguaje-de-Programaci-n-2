@@ -1,0 +1,12 @@
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\bin\Debug\IngeSoftVirtual.exe.config
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\bin\Debug\IngeSoftVirtual.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\bin\Debug\IngeSoftVirtual.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.csproj.SuggestedBindingRedirects.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.frmListarCursos.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.frmGestionarCursos.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.Properties.Resources.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.csproj.GenerateResource.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\L14\FrontEndCSharp\IngeSoftVirtual\IngeSoftVirtual\obj\Debug\IngeSoftVirtual.pdb

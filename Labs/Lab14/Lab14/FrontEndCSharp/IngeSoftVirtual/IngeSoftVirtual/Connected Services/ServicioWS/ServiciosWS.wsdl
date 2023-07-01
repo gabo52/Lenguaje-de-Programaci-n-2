@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservices.ingesoft.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ServiciosWS" targetNamespace="http://webservices.ingesoft.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/IngesoftWebServices/ServiciosWS?xsd=1" namespace="http://webservices.ingesoft.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarEspecialidadesTodas">
+    <part name="parameters" element="tns:listarEspecialidadesTodas" />
+  </message>
+  <message name="listarEspecialidadesTodasResponse">
+    <part name="parameters" element="tns:listarEspecialidadesTodasResponse" />
+  </message>
+  <message name="listarCursosPorNombre">
+    <part name="parameters" element="tns:listarCursosPorNombre" />
+  </message>
+  <message name="listarCursosPorNombreResponse">
+    <part name="parameters" element="tns:listarCursosPorNombreResponse" />
+  </message>
+  <message name="insertarCurso">
+    <part name="parameters" element="tns:insertarCurso" />
+  </message>
+  <message name="insertarCursoResponse">
+    <part name="parameters" element="tns:insertarCursoResponse" />
+  </message>
+  <portType name="ServiciosWS">
+    <operation name="listarEspecialidadesTodas">
+      <input wsam:Action="http://webservices.ingesoft.pucp.edu.pe/ServiciosWS/listarEspecialidadesTodasRequest" message="tns:listarEspecialidadesTodas" />
+      <output wsam:Action="http://webservices.ingesoft.pucp.edu.pe/ServiciosWS/listarEspecialidadesTodasResponse" message="tns:listarEspecialidadesTodasResponse" />
+    </operation>
+    <operation name="listarCursosPorNombre">
+      <input wsam:Action="http://webservices.ingesoft.pucp.edu.pe/ServiciosWS/listarCursosPorNombreRequest" message="tns:listarCursosPorNombre" />
+      <output wsam:Action="http://webservices.ingesoft.pucp.edu.pe/ServiciosWS/listarCursosPorNombreResponse" message="tns:listarCursosPorNombreResponse" />
+    </operation>
+    <operation name="insertarCurso">
+      <input wsam:Action="http://webservices.ingesoft.pucp.edu.pe/ServiciosWS/insertarCursoRequest" message="tns:insertarCurso" />
+      <output wsam:Action="http://webservices.ingesoft.pucp.edu.pe/ServiciosWS/insertarCursoResponse" message="tns:insertarCursoResponse" />
+    </operation>
+  </portType>
+  <binding name="ServiciosWSPortBinding" type="tns:ServiciosWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarEspecialidadesTodas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarCursosPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ServiciosWS">
+    <port name="ServiciosWSPort" binding="tns:ServiciosWSPortBinding">
+      <soap:address location="http://localhost:8080/IngesoftWebServices/ServiciosWS" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webservices.ingesoft.pucp.edu.pe/" targetNamespace="http://webservices.ingesoft.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertarCurso" type="tns:insertarCurso" />
+  <xs:element name="insertarCursoResponse" type="tns:insertarCursoResponse" />
+  <xs:element name="listarCursosPorNombre" type="tns:listarCursosPorNombre" />
+  <xs:element name="listarCursosPorNombreResponse" type="tns:listarCursosPorNombreResponse" />
+  <xs:element name="listarEspecialidadesTodas" type="tns:listarEspecialidadesTodas" />
+  <xs:element name="listarEspecialidadesTodasResponse" type="tns:listarEspecialidadesTodasResponse" />
+  <xs:complexType name="listarEspecialidadesTodas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarEspecialidadesTodasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:especialidad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="especialidad">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idEspecialidad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarCurso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="curso" type="tns:curso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="curso">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="clave" type="xs:string" />
+      <xs:element name="creditos" type="xs:int" />
+      <xs:element minOccurs="0" name="especialidad" type="tns:especialidad" />
+      <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+      <xs:element name="idCurso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="precio" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarCursoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarCursosPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarCursosPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:curso" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
