@@ -1,6 +1,7 @@
 package pe.edu.pucp.confesoft.model;
+import java.io.Serializable;
 import java.sql.Time;
-public class Ponencia {
+public class Ponencia implements Serializable{
     private int idPonencia;
     private Integrante ponente;
     private String titulo;

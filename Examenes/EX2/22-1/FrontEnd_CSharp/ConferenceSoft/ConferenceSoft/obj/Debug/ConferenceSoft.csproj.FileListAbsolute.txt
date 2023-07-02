@@ -9,3 +9,16 @@ C:\Users\PC_Lima\Desktop\Examen Final\ConferenceSoft\ConferenceSoft\obj\Debug\Co
 C:\Users\PC_Lima\Desktop\Examen Final\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.csproj.CoreCompileInputs.cache
 C:\Users\PC_Lima\Desktop\Examen Final\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.exe
 C:\Users\PC_Lima\Desktop\Examen Final\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\bin\Debug\ConferenceSoft.exe.config
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\bin\Debug\ConferenceSoft.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\bin\Debug\ConferenceSoft.pdb
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.csproj.SuggestedBindingRedirects.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.frmBusquedaEventos.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.frmBusquedaIntegrantes.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.frmGestionEventos.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.Properties.Resources.resources
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.csproj.GenerateResource.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.exe
+C:\Users\gabri\OneDrive\Escritorio\7mo ciclo\LenguajeDeProgramacion2\Examenes\EX2\22-1\FrontEnd_CSharp\ConferenceSoft\ConferenceSoft\obj\Debug\ConferenceSoft.pdb

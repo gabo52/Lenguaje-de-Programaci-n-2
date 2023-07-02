@@ -1,7 +1,8 @@
 package pe.edu.pucp.confesoft.model;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
-public class Evento {
+public class Evento implements Serializable{
     private int idEvento;
     private ArrayList<Ponencia> ponencias;
     private String nombre;

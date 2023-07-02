@@ -82,7 +82,7 @@
             this.btnCancelar});
             this.tsMenu.Location = new System.Drawing.Point(0, 0);
             this.tsMenu.Name = "tsMenu";
-            this.tsMenu.Size = new System.Drawing.Size(866, 27);
+            this.tsMenu.Size = new System.Drawing.Size(1155, 27);
             this.tsMenu.TabIndex = 0;
             this.tsMenu.Text = "toolStrip1";
             // 
@@ -91,7 +91,7 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(66, 24);
+            this.btnNuevo.Size = new System.Drawing.Size(76, 24);
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -100,23 +100,25 @@
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(73, 24);
+            this.btnGuardar.Size = new System.Drawing.Size(86, 24);
             this.btnGuardar.Text = "&Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnBuscar
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(66, 24);
+            this.btnBuscar.Size = new System.Drawing.Size(76, 24);
             this.btnBuscar.Text = "&Buscar";
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(77, 24);
+            this.btnCancelar.Size = new System.Drawing.Size(90, 24);
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -133,67 +135,65 @@
             this.gbDatosEvento.Controls.Add(this.lblID);
             this.gbDatosEvento.Controls.Add(this.pbPortada);
             this.gbDatosEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbDatosEvento.Location = new System.Drawing.Point(9, 29);
-            this.gbDatosEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbDatosEvento.Location = new System.Drawing.Point(12, 36);
+            this.gbDatosEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbDatosEvento.Name = "gbDatosEvento";
-            this.gbDatosEvento.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbDatosEvento.Size = new System.Drawing.Size(848, 232);
+            this.gbDatosEvento.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbDatosEvento.Size = new System.Drawing.Size(1131, 286);
             this.gbDatosEvento.TabIndex = 1;
             this.gbDatosEvento.TabStop = false;
             this.gbDatosEvento.Text = "Datos del Evento";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(184, 141);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescripcion.Location = new System.Drawing.Point(245, 174);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(656, 79);
+            this.txtDescripcion.Size = new System.Drawing.Size(873, 96);
             this.txtDescripcion.TabIndex = 9;
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(182, 116);
-            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescripcion.Location = new System.Drawing.Point(243, 143);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(143, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(172, 16);
             this.lblDescripcion.TabIndex = 8;
             this.lblDescripcion.Text = "Descripción del Evento:";
             // 
             // dtpFechaEvento
             // 
-            this.dtpFechaEvento.Location = new System.Drawing.Point(305, 72);
-            this.dtpFechaEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFechaEvento.Location = new System.Drawing.Point(407, 89);
+            this.dtpFechaEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpFechaEvento.Name = "dtpFechaEvento";
-            this.dtpFechaEvento.Size = new System.Drawing.Size(261, 19);
+            this.dtpFechaEvento.Size = new System.Drawing.Size(347, 22);
             this.dtpFechaEvento.TabIndex = 7;
             // 
             // lblFechaEvento
             // 
             this.lblFechaEvento.AutoSize = true;
-            this.lblFechaEvento.Location = new System.Drawing.Point(190, 75);
-            this.lblFechaEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFechaEvento.Location = new System.Drawing.Point(253, 92);
             this.lblFechaEvento.Name = "lblFechaEvento";
-            this.lblFechaEvento.Size = new System.Drawing.Size(111, 13);
+            this.lblFechaEvento.Size = new System.Drawing.Size(132, 16);
             this.lblFechaEvento.TabIndex = 6;
             this.lblFechaEvento.Text = "Fecha del Evento:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(305, 46);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Location = new System.Drawing.Point(407, 57);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(535, 19);
+            this.txtNombre.Size = new System.Drawing.Size(712, 22);
             this.txtNombre.TabIndex = 5;
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(305, 23);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Location = new System.Drawing.Point(407, 28);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(68, 19);
+            this.txtID.Size = new System.Drawing.Size(89, 22);
             this.txtID.TabIndex = 4;
             this.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -202,10 +202,10 @@
             this.btnSubirPortada.BackgroundImage = global::ConferenceSoft.Properties.Resources.upload;
             this.btnSubirPortada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSubirPortada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubirPortada.Location = new System.Drawing.Point(131, 188);
-            this.btnSubirPortada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubirPortada.Location = new System.Drawing.Point(175, 231);
+            this.btnSubirPortada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSubirPortada.Name = "btnSubirPortada";
-            this.btnSubirPortada.Size = new System.Drawing.Size(38, 30);
+            this.btnSubirPortada.Size = new System.Drawing.Size(51, 37);
             this.btnSubirPortada.TabIndex = 3;
             this.btnSubirPortada.UseVisualStyleBackColor = true;
             this.btnSubirPortada.Click += new System.EventHandler(this.btnSubirPortada_Click);
@@ -213,30 +213,28 @@
             // lblNombreEvento
             // 
             this.lblNombreEvento.AutoSize = true;
-            this.lblNombreEvento.Location = new System.Drawing.Point(182, 48);
-            this.lblNombreEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombreEvento.Location = new System.Drawing.Point(243, 59);
             this.lblNombreEvento.Name = "lblNombreEvento";
-            this.lblNombreEvento.Size = new System.Drawing.Size(119, 13);
+            this.lblNombreEvento.Size = new System.Drawing.Size(144, 16);
             this.lblNombreEvento.TabIndex = 2;
             this.lblNombreEvento.Text = "Nombre del Evento:";
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(212, 25);
-            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblID.Location = new System.Drawing.Point(283, 31);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(89, 13);
+            this.lblID.Size = new System.Drawing.Size(104, 16);
             this.lblID.TabIndex = 1;
             this.lblID.Text = "ID del Evento:";
             // 
             // pbPortada
             // 
             this.pbPortada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbPortada.Location = new System.Drawing.Point(12, 23);
-            this.pbPortada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbPortada.Location = new System.Drawing.Point(16, 28);
+            this.pbPortada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbPortada.Name = "pbPortada";
-            this.pbPortada.Size = new System.Drawing.Size(157, 196);
+            this.pbPortada.Size = new System.Drawing.Size(209, 241);
             this.pbPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPortada.TabIndex = 0;
             this.pbPortada.TabStop = false;
@@ -262,11 +260,11 @@
             this.gbDatosPonentes.Controls.Add(this.lblNombrePonente);
             this.gbDatosPonentes.Controls.Add(this.dgvPonencias);
             this.gbDatosPonentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbDatosPonentes.Location = new System.Drawing.Point(9, 266);
-            this.gbDatosPonentes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbDatosPonentes.Location = new System.Drawing.Point(12, 327);
+            this.gbDatosPonentes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbDatosPonentes.Name = "gbDatosPonentes";
-            this.gbDatosPonentes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbDatosPonentes.Size = new System.Drawing.Size(848, 255);
+            this.gbDatosPonentes.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbDatosPonentes.Size = new System.Drawing.Size(1131, 314);
             this.gbDatosPonentes.TabIndex = 2;
             this.gbDatosPonentes.TabStop = false;
             this.gbDatosPonentes.Text = "Ponencias del Evento";
@@ -275,38 +273,36 @@
             // 
             this.dtpHoraFin.CustomFormat = "HH:mm";
             this.dtpHoraFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHoraFin.Location = new System.Drawing.Point(295, 101);
-            this.dtpHoraFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpHoraFin.Location = new System.Drawing.Point(393, 124);
+            this.dtpHoraFin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpHoraFin.Name = "dtpHoraFin";
             this.dtpHoraFin.ShowUpDown = true;
-            this.dtpHoraFin.Size = new System.Drawing.Size(78, 19);
+            this.dtpHoraFin.Size = new System.Drawing.Size(103, 22);
             this.dtpHoraFin.TabIndex = 13;
             // 
             // lblHoraFin
             // 
             this.lblHoraFin.AutoSize = true;
-            this.lblHoraFin.Location = new System.Drawing.Point(230, 103);
-            this.lblHoraFin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHoraFin.Location = new System.Drawing.Point(307, 127);
             this.lblHoraFin.Name = "lblHoraFin";
-            this.lblHoraFin.Size = new System.Drawing.Size(59, 13);
+            this.lblHoraFin.Size = new System.Drawing.Size(70, 16);
             this.lblHoraFin.TabIndex = 12;
             this.lblHoraFin.Text = "Hora Fin:";
             // 
             // txtTituloPonencia
             // 
-            this.txtTituloPonencia.Location = new System.Drawing.Point(151, 74);
-            this.txtTituloPonencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTituloPonencia.Location = new System.Drawing.Point(201, 91);
+            this.txtTituloPonencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTituloPonencia.Name = "txtTituloPonencia";
-            this.txtTituloPonencia.Size = new System.Drawing.Size(426, 19);
+            this.txtTituloPonencia.Size = new System.Drawing.Size(567, 22);
             this.txtTituloPonencia.TabIndex = 11;
             // 
             // lblTituloPonencia
             // 
             this.lblTituloPonencia.AutoSize = true;
-            this.lblTituloPonencia.Location = new System.Drawing.Point(13, 77);
-            this.lblTituloPonencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTituloPonencia.Location = new System.Drawing.Point(17, 95);
             this.lblTituloPonencia.Name = "lblTituloPonencia";
-            this.lblTituloPonencia.Size = new System.Drawing.Size(134, 13);
+            this.lblTituloPonencia.Size = new System.Drawing.Size(158, 16);
             this.lblTituloPonencia.TabIndex = 10;
             this.lblTituloPonencia.Text = "Título de la Ponencia:";
             // 
@@ -314,88 +310,88 @@
             // 
             this.dtpHoraInicio.CustomFormat = "HH:mm";
             this.dtpHoraInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHoraInicio.Location = new System.Drawing.Point(109, 101);
-            this.dtpHoraInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpHoraInicio.Location = new System.Drawing.Point(145, 124);
+            this.dtpHoraInicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpHoraInicio.Name = "dtpHoraInicio";
             this.dtpHoraInicio.ShowUpDown = true;
-            this.dtpHoraInicio.Size = new System.Drawing.Size(78, 19);
+            this.dtpHoraInicio.Size = new System.Drawing.Size(103, 22);
             this.dtpHoraInicio.TabIndex = 9;
             // 
             // lblHoraInicio
             // 
             this.lblHoraInicio.AutoSize = true;
-            this.lblHoraInicio.Location = new System.Drawing.Point(14, 103);
-            this.lblHoraInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHoraInicio.Location = new System.Drawing.Point(19, 127);
             this.lblHoraInicio.Name = "lblHoraInicio";
-            this.lblHoraInicio.Size = new System.Drawing.Size(91, 13);
+            this.lblHoraInicio.Size = new System.Drawing.Size(108, 16);
             this.lblHoraInicio.TabIndex = 8;
             this.lblHoraInicio.Text = "Hora de Inicio:";
             // 
             // btnEliminarPonente
             // 
-            this.btnEliminarPonente.Location = new System.Drawing.Point(747, 98);
-            this.btnEliminarPonente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminarPonente.Location = new System.Drawing.Point(996, 121);
+            this.btnEliminarPonente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarPonente.Name = "btnEliminarPonente";
-            this.btnEliminarPonente.Size = new System.Drawing.Size(38, 23);
+            this.btnEliminarPonente.Size = new System.Drawing.Size(51, 28);
             this.btnEliminarPonente.TabIndex = 7;
             this.btnEliminarPonente.Text = "-";
             this.btnEliminarPonente.UseVisualStyleBackColor = true;
+            this.btnEliminarPonente.Click += new System.EventHandler(this.btnEliminarPonente_Click);
             // 
             // btnAgregarPonente
             // 
-            this.btnAgregarPonente.Location = new System.Drawing.Point(705, 98);
-            this.btnAgregarPonente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarPonente.Location = new System.Drawing.Point(940, 121);
+            this.btnAgregarPonente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarPonente.Name = "btnAgregarPonente";
-            this.btnAgregarPonente.Size = new System.Drawing.Size(38, 23);
+            this.btnAgregarPonente.Size = new System.Drawing.Size(51, 28);
             this.btnAgregarPonente.TabIndex = 6;
             this.btnAgregarPonente.Text = "+";
             this.btnAgregarPonente.UseVisualStyleBackColor = true;
+            this.btnAgregarPonente.Click += new System.EventHandler(this.btnAgregarPonente_Click);
             // 
             // btnBuscarPonente
             // 
-            this.btnBuscarPonente.Location = new System.Drawing.Point(246, 22);
-            this.btnBuscarPonente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarPonente.Location = new System.Drawing.Point(328, 27);
+            this.btnBuscarPonente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscarPonente.Name = "btnBuscarPonente";
-            this.btnBuscarPonente.Size = new System.Drawing.Size(40, 23);
+            this.btnBuscarPonente.Size = new System.Drawing.Size(53, 28);
             this.btnBuscarPonente.TabIndex = 5;
             this.btnBuscarPonente.Text = "...";
             this.btnBuscarPonente.UseVisualStyleBackColor = true;
+            this.btnBuscarPonente.Click += new System.EventHandler(this.btnBuscarPonente_Click);
             // 
             // txtCodigoPUCPPonente
             // 
-            this.txtCodigoPUCPPonente.Location = new System.Drawing.Point(106, 24);
-            this.txtCodigoPUCPPonente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigoPUCPPonente.Location = new System.Drawing.Point(141, 30);
+            this.txtCodigoPUCPPonente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodigoPUCPPonente.Name = "txtCodigoPUCPPonente";
             this.txtCodigoPUCPPonente.ReadOnly = true;
-            this.txtCodigoPUCPPonente.Size = new System.Drawing.Size(134, 19);
+            this.txtCodigoPUCPPonente.Size = new System.Drawing.Size(177, 22);
             this.txtCodigoPUCPPonente.TabIndex = 4;
             // 
             // lblCodigoPUCPPonente
             // 
             this.lblCodigoPUCPPonente.AutoSize = true;
-            this.lblCodigoPUCPPonente.Location = new System.Drawing.Point(13, 26);
-            this.lblCodigoPUCPPonente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodigoPUCPPonente.Location = new System.Drawing.Point(17, 32);
             this.lblCodigoPUCPPonente.Name = "lblCodigoPUCPPonente";
-            this.lblCodigoPUCPPonente.Size = new System.Drawing.Size(87, 13);
+            this.lblCodigoPUCPPonente.Size = new System.Drawing.Size(106, 16);
             this.lblCodigoPUCPPonente.TabIndex = 3;
             this.lblCodigoPUCPPonente.Text = "Código PUCP:";
             // 
             // txtNombrePonente
             // 
-            this.txtNombrePonente.Location = new System.Drawing.Point(143, 49);
-            this.txtNombrePonente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombrePonente.Location = new System.Drawing.Point(191, 60);
+            this.txtNombrePonente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombrePonente.Name = "txtNombrePonente";
             this.txtNombrePonente.ReadOnly = true;
-            this.txtNombrePonente.Size = new System.Drawing.Size(396, 19);
+            this.txtNombrePonente.Size = new System.Drawing.Size(527, 22);
             this.txtNombrePonente.TabIndex = 2;
             // 
             // lblNombrePonente
             // 
             this.lblNombrePonente.AutoSize = true;
-            this.lblNombrePonente.Location = new System.Drawing.Point(13, 52);
-            this.lblNombrePonente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombrePonente.Location = new System.Drawing.Point(17, 64);
             this.lblNombrePonente.Name = "lblNombrePonente";
-            this.lblNombrePonente.Size = new System.Drawing.Size(126, 13);
+            this.lblNombrePonente.Size = new System.Drawing.Size(153, 16);
             this.lblNombrePonente.TabIndex = 1;
             this.lblNombrePonente.Text = "Nombre del Ponente:";
             // 
@@ -409,15 +405,16 @@
             this.Ponencia,
             this.HoraInicio,
             this.HoraFin});
-            this.dgvPonencias.Location = new System.Drawing.Point(12, 128);
-            this.dgvPonencias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPonencias.Location = new System.Drawing.Point(16, 158);
+            this.dgvPonencias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPonencias.Name = "dgvPonencias";
             this.dgvPonencias.ReadOnly = true;
             this.dgvPonencias.RowHeadersWidth = 51;
             this.dgvPonencias.RowTemplate.Height = 24;
             this.dgvPonencias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPonencias.Size = new System.Drawing.Size(828, 117);
+            this.dgvPonencias.Size = new System.Drawing.Size(1104, 144);
             this.dgvPonencias.TabIndex = 0;
+            this.dgvPonencias.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvPonencias_CellFormatting);
             // 
             // Ponente
             // 
@@ -453,14 +450,14 @@
             // 
             // frmGestionEventos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 526);
+            this.ClientSize = new System.Drawing.Size(1155, 647);
             this.Controls.Add(this.gbDatosPonentes);
             this.Controls.Add(this.gbDatosEvento);
             this.Controls.Add(this.tsMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmGestionEventos";
             this.Text = "Formulario de Eventos";
             this.tsMenu.ResumeLayout(false);

@@ -58,7 +58,7 @@
             // 
             this.rbTodos.AutoSize = true;
             this.rbTodos.Location = new System.Drawing.Point(155, 14);
-            this.rbTodos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbTodos.Margin = new System.Windows.Forms.Padding(4);
             this.rbTodos.Name = "rbTodos";
             this.rbTodos.Size = new System.Drawing.Size(68, 20);
             this.rbTodos.TabIndex = 1;
@@ -108,6 +108,7 @@
             this.dgvIntegrantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvIntegrantes.Size = new System.Drawing.Size(1017, 261);
             this.dgvIntegrantes.TabIndex = 4;
+            this.dgvIntegrantes.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvIntegrantes_CellFormatting);
             // 
             // CodigoPUCP
             // 
@@ -159,6 +160,7 @@
             this.btnSeleccionar.TabIndex = 8;
             this.btnSeleccionar.Text = "Seleccionar";
             this.btnSeleccionar.UseVisualStyleBackColor = true;
+            this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
             // 
             // rbEgresados
             // 
@@ -175,12 +177,13 @@
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(668, 43);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(100, 28);
             this.btnBuscar.TabIndex = 10;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // frmBusquedaIntegrantes
             // 
@@ -197,7 +200,7 @@
             this.Controls.Add(this.rbDocentes);
             this.Controls.Add(this.rbTodos);
             this.Controls.Add(this.lblTipoIntegrante);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBusquedaIntegrantes";
             this.Text = "Formulario de Búsqueda de Integrantes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvIntegrantes)).EndInit();

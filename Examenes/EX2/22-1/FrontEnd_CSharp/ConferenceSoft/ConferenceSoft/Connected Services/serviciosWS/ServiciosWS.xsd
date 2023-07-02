@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.confesoft.pucp.du.pe/" targetNamespace="http://services.confesoft.pucp.du.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertarEvento" type="tns:insertarEvento" />
+  <xs:element name="insertarEventoResponse" type="tns:insertarEventoResponse" />
+  <xs:element name="listarEventosPorNombre" type="tns:listarEventosPorNombre" />
+  <xs:element name="listarEventosPorNombreResponse" type="tns:listarEventosPorNombreResponse" />
+  <xs:element name="listarIntegrantesPorNombreTipo" type="tns:listarIntegrantesPorNombreTipo" />
+  <xs:element name="listarIntegrantesPorNombreTipoResponse" type="tns:listarIntegrantesPorNombreTipoResponse" />
+  <xs:element name="listarPonenciasPorIdEvento" type="tns:listarPonenciasPorIdEvento" />
+  <xs:element name="listarPonenciasPorIdEventoResponse" type="tns:listarPonenciasPorIdEventoResponse" />
+  <xs:complexType name="listarIntegrantesPorNombreTipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="tipo" type="xs:unsignedShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarIntegrantesPorNombreTipoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:integrante" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="integrante">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoPUCP" type="xs:string" />
+      <xs:element name="idIntegrante" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="tipoIntegrante" type="tns:tipoIntegrante" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoIntegrante">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="idTipoIntegrante" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPonenciasPorIdEvento">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPonenciasPorIdEventoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ponencia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ponencia">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="horaFin" type="xs:string" />
+      <xs:element minOccurs="0" name="horaInicio" type="xs:string" />
+      <xs:element name="idPonencia" type="xs:int" />
+      <xs:element minOccurs="0" name="ponente" type="tns:integrante" />
+      <xs:element minOccurs="0" name="titulo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEventosPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEventosPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:evento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evento">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element name="idEvento" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ponencias" nillable="true" type="tns:ponencia" />
+      <xs:element minOccurs="0" name="portada" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarEvento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="evento" type="tns:evento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarEventoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

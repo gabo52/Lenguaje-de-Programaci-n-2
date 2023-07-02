@@ -131,6 +131,8 @@ No olvidar inicializar los DAO con la interfaz obtenida del servidor
         return especialidades;
     }
 ``` 
+
+No olvidar vincular el DBManager, model y poner el jdbc
 Lanzar el RMI(Server)
 
 Conectamos el GlashFish:
@@ -165,9 +167,12 @@ BackEnd:
 
 OrdenesVentaMySQL
 ClientesMySQL
+Lab 14, services
 
 
 convertir a java.sql.date
 
 new java.sql.date(fecha.getTime());
+
+REVISAR QUE USES LA BD CORRECTA
 

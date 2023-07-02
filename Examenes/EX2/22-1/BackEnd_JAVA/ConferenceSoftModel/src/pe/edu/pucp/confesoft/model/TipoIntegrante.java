@@ -1,5 +1,8 @@
 package pe.edu.pucp.confesoft.model;
-public class TipoIntegrante {
+
+import java.io.Serializable;
+
+public class TipoIntegrante implements Serializable{
     private int idTipoIntegrante;
     private String descripcion;
 

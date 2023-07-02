@@ -100,3 +100,5 @@ CREATE PROCEDURE LISTAR_PONENCIAS_X_ID_EVENTO(
 BEGIN
 	SELECT ponencia.id_ponencia, ponencia.titulo, ponencia.hora_inicio, ponencia.hora_fin, integrante.id_integrante, integrante.nombre, integrante.apellido_paterno FROM ponencia INNER JOIN integrante ON ponencia.fid_ponente = integrante.id_integrante WHERE ponencia.activo = 1 AND ponencia.fid_evento = _id_evento;
 END$
+
+select * from evento;
