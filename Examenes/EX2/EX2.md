@@ -176,3 +176,12 @@ new java.sql.date(fecha.getTime());
 
 REVISAR QUE USES LA BD CORRECTA
 
+
+# Datos conexion:
+
+Datos conexión:
+user: admin
+password:inf282lp220231
+nombre de la BD: lp2newbd
+hostname: database-lp2-newbd.cipfleuw5pam.us-east-1.rds.amazonaws.com
+Identificador del clúster de base de datos: database-lp2-newBD
